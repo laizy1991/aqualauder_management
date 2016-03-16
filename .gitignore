@@ -15,4 +15,6 @@ test-result/*
 *.swp
 /bin/
 /server.pid
-.idea
+*.iml
+*.ipr
+*.iws
