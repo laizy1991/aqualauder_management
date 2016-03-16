@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" charset="${_response_encoding}">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>${pageTitle}</title>
+        <link rel="stylesheet" href="@{'/public/css/login.css'}">
+    </head>
+    <body>
+        <div class="top-bar">
+            <div class="top-con">
+                <div class="logo"></div>
+                <ul class="top-menu">
+                    <li><a href="http://${websiteHost}/">首页</a></li>                    
+                    <li><a href="http://${websiteHost}/help.html">帮助</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 主内容区 begin -->
+        <div class="content">
+            <div class="main">
+                <!-- 登录 begin -->
+                <div class="login-box">
+                    <h1 class="title">登录</h1>
+                    <p class="error-msg">${errorMsg}</p>
+    
+                    <form class="login-form" action="@{Application.logined}" method="post">
+                        <div class="form-field">
+                            <label for="mobile"><i class="icon icon-account"></i></label>
+                            <input type="text" id="mobile" name="userName" value="" placeholder="用户名">
+                        </div>
+                        <div class="form-field">
+                            <label for="password"><i class="icon icon-pwd"></i></label>
+                            <input type="password" id="password" name="password" value="" placeholder="密码">
+                        </div>
+                        <div class="remember">
+                            <label>
+                                <input type="checkbox" id="remember" value="1" />
+                                <span>记住账号</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-active">登录</button>
+                    </form>
+                </div>
+                <!-- 登录 end -->
+            </div>
+        </div>
+        <!-- 主内容区 end -->
+        #{include file="common/footer.html" /}
+        
+        #{include file="common/jsinclude.html" /}
+        <script>
+            var verNum = new Date();
+            seajs.config({
+                base:"/",
+                // 加版本号
+                map: [
+                    [ '.js', '.js?v='+verNum]
+                ]
+            });
+            seajs.use("@{'/public/js/app/login/login.js'}");
+        </script>
+    </body>
+</html>

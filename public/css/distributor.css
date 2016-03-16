@@ -1,0 +1,207 @@
+.dialog-create .form-group,.game-list{*zoom:1}.dialog-create .form-group:after,.game-list:after{content:"";display:block;clear:both;visibility:hidden;height:0;font-size:0}.game-list li .name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.folded-panel.open .folded-toggle .icon-toggle,.folded-toggle .icon-toggle{display:inline-block;width:0;height:0;overflow:hidden}.dialog-create .form-group,.game-list{*zoom:1}.dialog-create .form-group:after,.game-list:after{content:"";display:block;clear:both;visibility:hidden;height:0;font-size:0}.game-list li .name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.folded-panel.open .folded-toggle .icon-toggle,.folded-toggle .icon-toggle{display:inline-block;width:0;height:0;overflow:hidden}.tb{width:100%;border:1px solid #E5E5E5;font-size:16px}.tb th,.tb td{height:32px;padding:10px;border-bottom:1px solid #E5E5E5;text-align:left;font-weight:400}.tb td{color:#666}.tb thead th{background-color:#F8F8F8}.tb .order{cursor:pointer}.tb .order .icon-order{position:relative;top:-1px;margin-left:6px}.tb .selected{background-color:#FAFFFC}.tb .dropdown .dropdown-toggle{width:36px;height:32px;border:1px solid #fff;border-bottom:0 none;border-radius:3px 3px 0 0}.tb .dropdown .dropdown-toggle .icon{float:left;margin:7px 0 0 7px}.tb .dropdown .dropdown-menu{top:32px;background-color:#FAFAFA;border:1px solid #C6C6C6;border-radius:3px 0 3px 3px}.tb .dropdown .dropdown-menu a{min-width:116px;_width:expression(this.width < 116 ? "116px" : "auto");height:52px;line-height:52px;padding:0 20px;color:#333;text-align:center;white-space:nowrap}.tb .dropdown .dropdown-menu a:hover{background-color:#F5F5F5}.tb .dropdown.open .dropdown-toggle{position:relative;z-index:1;background-color:#FAFAFA;border-color:#C6C6C6}.pagination-wrap{border:1px solid #E5E5E5;border-top:0 none;text-align:right;padding:11px 19px}.folded-panel{margin-bottom:-1px}.folded-panel.open .folded-toggle .icon-toggle{left:17px;top:17px;border-top:6px solid #c6c6c6;border-left:6px dashed transparent;border-right:6px dashed transparent}.folded-panel.open .folded-cont{display:block}.folded-toggle{position:relative;height:40px;line-height:40px;border:1px solid #E5E5E5;border-width:1px 0;background-color:#F8F8F8;font-size:16px;padding:0 20px 0 36px;cursor:pointer}.folded-toggle .icon-toggle{position:absolute;left:20px;top:14px;border-left:6px solid #c6c6c6;border-top:6px dashed transparent;border-bottom:6px dashed transparent}.folded-toggle .opts{position:absolute;top:0;right:20px;font-size:0}.folded-toggle .opts .opt{display:inline-block;font-size:14px}.folded-toggle .opts .opt a{border-right:1px solid #E8E8E8;padding:0 10px}.folded-toggle .opts .opt.last a{border-right:0 none;padding-right:0}.folded-cont{display:none}.group-list{min-height:113px;_height:113px;margin:0;padding:0;list-style:none}.group-list li{background-color:#fff;border-bottom:1px solid #E5E5E5}.guild-group,.group-list li{height:72px;padding:20px 0;overflow:hidden}.guild-group img,.group-list li img{float:left;width:72px;height:72px;border-radius:2px}.guild-group .name,.guild-group .num,.group-list li .name,.group-list li .num{margin-left:92px}.guild-group .name,.group-list li .name{font-size:18px;color:#333;margin-top:12px;padding-bottom:2px}.guild-group .num,.group-list li .num{font-size:16px;color:#999}.dialog .modify-game{margin-left:12px}.dialog-edit{padding:32px 122px}.dialog-edit label{margin-right:16px}.dialog-edit .in-t{width:302px}.dialog-delete{padding:30px 100px}.dialog-tips{padding:20px 130px}.dialog-add{padding:10px 108px 0}.dialog-add .form-group{margin-bottom:16px}.dialog-add label{display:inline-block;width:6em;margin-right:16px;text-align:right}.dialog-add .in-t{width:302px}.dialog-add .msg{padding-left:104px}.dialog-create{width:640px}.dialog-create .in-t{width:302px}.dialog-create img{width:72px;height:72px;border-radius:2px}.dialog-create .form-group{line-height:36px;margin-bottom:10px}.dialog-create .label{float:left;display:inline-block;text-align:right}.dialog-create .col{margin-left:5em;padding-left:20px}.dialog-create .ck-label{display:inline-block;padding-bottom:6px}.dialog-create .ck-label input,.dialog-create .ck-label span{vertical-align:middle}.dialog-create .ck-label input{width:14px;height:14px;margin:0 10px 0 0}.dialog-create .upload-button-wrap{display:inline-block;height:30px;line-height:30px;margin:21px 0 0 12px;overflow:hidden}.search-combobox{margin:40px auto}.game-wrap{*position:relative;width:684px;height:224px;overflow-x:hidden;overflow-y:auto}.game-wrap .ajax-loading{text-align:center}.game-list{margin:0;padding:0 0 0 40px;*padding-bottom:40px;list-style:none}.game-list li{position:relative;float:left;width:166px;height:72px;line-height:72px;padding:0 0 0 30px;margin:0 13px 40px 0;overflow:hidden}.game-list li label{cursor:pointer}.game-list li input{position:absolute;left:0;top:50%;width:14px;height:14px;margin-top:-7px}.game-list li img{float:left;width:72px;height:72px;border-radius:2px;margin-right:10px}.game-list li .name{display:inline-block;width:6em}.guild-info{padding:18px 0;position:relative}.guild-info .name{font-size:18px;margin-bottom:4px}.guild-info .group-num{display:inline-block;height:20px;line-height:20px;margin-right:20px;color:#999;font-size:14px;padding-left:10px}.guild-info .group-num .icon{float:left;margin-right:7px}.guild-info .group-num .icon-id{margin-top:3px}.guild-info .info-control{position:absolute;right:0px;top:18px}.guild-info .info-control .opt{display:inline-block;font-size:14px}.guild-info .info-control .opt a{border-right:1px solid #E8E8E8;padding:0 10px}.guild-info .info-control .opt.last a{border-right:0 none;padding-right:0}.tb .in-t,.tb .in-show{font-size:16px;position:relative;left:-9px}.in-show{height:20px;line-height:20px;padding:7px 8px;border:1px solid #FFF;vertical-align:middle;color:#666}
+
+.text-center {
+    text-align: center;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #f5f5f5;
+}
+table col[class*="col-"] {
+    display: table-column;
+    float: none;
+    position: static;
+}
+table td[class*="col-"], table th[class*="col-"] {
+    display: table-cell;
+    float: none;
+    position: static;
+}
+.table > tbody > tr.active > td, .table > tbody > tr.active > th, .table > tbody > tr > td.active, .table > tbody > tr > th.active, .table > tfoot > tr.active > td, .table > tfoot > tr.active > th, .table > tfoot > tr > td.active, .table > tfoot > tr > th.active, .table > thead > tr.active > td, .table > thead > tr.active > th, .table > thead > tr > td.active, .table > thead > tr > th.active {
+    background-color: #f5f5f5;
+}
+.table-hover > tbody > tr.active:hover > td, .table-hover > tbody > tr.active:hover > th, .table-hover > tbody > tr:hover > .active, .table-hover > tbody > tr > td.active:hover, .table-hover > tbody > tr > th.active:hover {
+    background-color: #e8e8e8;
+}
+.table > tbody > tr.success > td, .table > tbody > tr.success > th, .table > tbody > tr > td.success, .table > tbody > tr > th.success, .table > tfoot > tr.success > td, .table > tfoot > tr.success > th, .table > tfoot > tr > td.success, .table > tfoot > tr > th.success, .table > thead > tr.success > td, .table > thead > tr.success > th, .table > thead > tr > td.success, .table > thead > tr > th.success {
+    background-color: #dff0d8;
+}
+.table-hover > tbody > tr.success:hover > td, .table-hover > tbody > tr.success:hover > th, .table-hover > tbody > tr:hover > .success, .table-hover > tbody > tr > td.success:hover, .table-hover > tbody > tr > th.success:hover {
+    background-color: #d0e9c6;
+}
+
+.pagination {
+    border-radius: 4px;
+    display: inline-block;
+    margin: 20px 0;
+    padding-left: 0;
+}
+.pagination > li {
+    display: inline;
+}
+.pagination > li > a, .pagination > li > span {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    float: left;
+    line-height: 1.42857;
+    margin-left: -1px;
+    padding: 6px 12px;
+    position: relative;
+    text-decoration: none;
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    margin-left: 0;
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    background-color: #eee;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #428bca;
+    border-color: #428bca;
+    color: #fff;
+    cursor: default;
+    z-index: 2;
+}
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+    background-color: #fff;
+    border-color: #ddd;
+    color: #999;
+    cursor: not-allowed;
+}
+.pagination-lg > li > a, .pagination-lg > li > span {
+    font-size: 18px;
+    padding: 10px 16px;
+}
+.pagination-lg > li:first-child > a, .pagination-lg > li:first-child > span {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.pagination-lg > li:last-child > a, .pagination-lg > li:last-child > span {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.pagination-sm > li > a, .pagination-sm > li > span {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+.pagination-sm > li:first-child > a, .pagination-sm > li:first-child > span {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.pagination-sm > li:last-child > a, .pagination-sm > li:last-child > span {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+/*==================list-group begin ==============*/
+.list-group {
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: block;
+    margin-bottom: -1px;
+    padding: 10px 15px;
+    position: relative;
+}
+.list-group-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.list-group-item:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-bottom: 0;
+}
+a.list-group-item {
+    color: #555;
+}
+a.list-group-item .list-group-item-heading {
+    color: #333;
+}
+a.list-group-item:focus, a.list-group-item:hover {
+    background-color: #f5f5f5;
+    color: #555;
+    text-decoration: none;
+}
+.list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled:hover {
+    background-color: #eee;
+    color: #777;
+    cursor: not-allowed;
+}
+.list-group-item.disabled .list-group-item-heading, .list-group-item.disabled:focus .list-group-item-heading, .list-group-item.disabled:hover .list-group-item-heading {
+    color: inherit;
+}
+.list-group-item.disabled .list-group-item-text, .list-group-item.disabled:focus .list-group-item-text, .list-group-item.disabled:hover .list-group-item-text {
+    color: #777;
+}
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: #337ab7;
+    border-color: #337ab7;
+    color: #fff;
+    z-index: 2;
+}
+.list-group-item.active .list-group-item-heading, .list-group-item.active .list-group-item-heading > .small, .list-group-item.active .list-group-item-heading > small, .list-group-item.active:focus .list-group-item-heading, .list-group-item.active:focus .list-group-item-heading > .small, .list-group-item.active:focus .list-group-item-heading > small, .list-group-item.active:hover .list-group-item-heading, .list-group-item.active:hover .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading > small {
+    color: inherit;
+}
+.list-group-item.active .list-group-item-text, .list-group-item.active:focus .list-group-item-text, .list-group-item.active:hover .list-group-item-text {
+    color: #c7ddef;
+}
+
+/*==================list-group end ==============*/
+
+.form-publish {
+    padding: 20px 0
+}
+
+.form-field {
+    line-height: 36px;
+    padding: 0 0 4px
+}
+
+.form-field input {
+    height: 20px;
+    line-height: 20px;
+    padding: 7px 8px;
+    border: 1px solid #E5E5E5
+}
+
+.form-field .ck-label {
+    margin-right: 16px
+}
+
+.form-field .ck-label input {
+    border: none;
+    padding: 0;
+    margin-right: 5px;
+    *margin-right: 0
+}
+
+.form-field .form-label {
+    float: left;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    width: 75px
+}
+
+.form-field .form-control {
+    float: left
+}
+
+.form-field .input-topic-title {
+    width: 402px
+}
+
+.form-field .input-floor {
+    width: 112px;
+    margin: 0 6px
+}

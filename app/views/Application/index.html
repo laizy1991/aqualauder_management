@@ -1,4 +1,15 @@
 #{extends 'main.html' /}
-#{set title:'Home' /}
 
-#{welcome /}
+#{set 'moreScripts'}
+    #{include file="common/jsinclude.html" /}
+    <script>
+        var verNum = new Date();
+        seajs.config({
+            // 加版本号
+            map: [
+                [ '.js', '.js?v='+verNum+'' ]
+            ]
+        });
+        seajs.use("@{'/public/js/app/common/common.js'}");
+    </script>
+#{/set}

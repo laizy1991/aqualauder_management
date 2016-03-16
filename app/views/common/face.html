@@ -1,0 +1,142 @@
+ 
+<!--使用说明：-->
+<!--1、在需要使用表情的位置 ：  include file="common/face.html"  -->
+<!--2、在需要使用表情的页面增加js代码：-->
+<!--$(function(){-->
+<!--register( $("#inputTextId") );-->
+<!--});-->
+<!--3、inputTextId 为发送消息的输入文本框Id；-->
+<!--
+另外一种方式，实现faceCallBack(choseFace)函数，
+函数实现文本追加表情操作，具体可见发布动态页面做法；
+-->
+<script type="text/javascript" src="@{'/public/js/thirdParty/bootstrap-3.3.4/js/jquery-2.1.3.min.js'}"></script>
+
+<script type="text/javascript" language="javascript">
+var faceDefine = "[哈哈]=face1.png#[大笑]=face2.png#[偷笑]=face3.png#[微笑]=face4.png#[奸笑]=face5.png#[色色]=face6.png#[拍手]=face7.png#[抠鼻]=face8.png#[害羞]=face9.png#[抓狂]=face10.png#[难过]=face11.png#[吐舌]=face12.png#[大哭]=face13.png#[尖叫]=face14.png#[囧笑]=face15.png#[滴汗]=face16.png#[瞌睡]=face17.png#[可怜]=face18.png#[思考]=face19.png#[耍酷]=face20.png#[鄙视]=face21.png#[敲打]=face22.png#[倒霉]=face23.png#[闭嘴]=face24.png#[哼哼]=face25.png#[嘘嘘]=face26.png#[呕吐]=face27.png#[委屈]=face28.png#[晕]=face29.png#[酣睡]=face30.png#[亲亲]=face31.png#[流泪]=face32.png#[无语]=face33.png#[惊奇]=face34.png#[生病]=face35.png#[生气]=face36.png#[金钱]=face37.png#[骷髅]=face38.png#[香吻]=face39.png#[便便]=face40.png#[月亮]=face41.png#[太阳]=face42.png#[奥特曼]=face43.png#[爱心]=face44.png#[心碎]=face45.png#[好强]=face46.png#[弱爆]=face47.png#[抱拳]=face48.png#[哦耶]=face49.png#[握手]=face50.png#[OK]=face51.png#[拉钩]=face52.png#[威武]=face53.png#[礼物]=face54.png#[猪头]=face55.png#[干杯]=face56.png#[蛋糕]=face57.png#[鲜花]=face58.png#[菜刀]=face59.png#[咖啡]=face60.png#[吃饭]=face61.png";
+var face;
+var textArea  ;
+$(function(){
+	face = Face(); 
+});
+function Face() { 	 
+	var theRequest = new Object(); 
+	if (faceDefine.indexOf("#") != -1) { 		 
+		strs = faceDefine.split("#"); 
+		for(var i = 0; i < strs.length; i ++) { 			 
+			theRequest[strs[i].split("=")[1]]=unescape(strs[i].split("=")[0]); 
+		} 
+	}
+	return theRequest; 
+}
+
+function faceClick(obj){	 
+	
+	var sFace = face[obj.id];
+	
+	//alert(faceCallBack);
+	
+	if(window.faceCallBack){
+		faceCallBack(sFace);
+		$("#faceDivId").hide();
+		return ;
+	}
+	
+	var oldvalue = textArea.val();
+	oldvalue += sFace;
+	textArea.val(oldvalue);
+	$("#faceDivId").hide();
+}
+/**
+外部引用，调用注册一个文本输入框
+	例子：
+	$(function(){
+		register( $("#inputTextId") );
+	});
+*/
+function register(OthtextArea){ 
+	textArea = OthtextArea;
+}
+
+var shwoface = 0;
+function showFace(){ 
+	if(shwoface == 0){
+		$("#faceDivId").show();
+		shwoface = 1;
+	}else{
+		$("#faceDivId").hide();
+		shwoface = 0;
+	}
+}
+</script>
+		<div style="margin-left: auto;TEXT-ALIGN:left;"><img src="/public/images/face/face1.png" onclick="showFace()"></div>
+    	<div id="faceDivId"  style="margin-left: auto;TEXT-ALIGN:center;position: absolute;z-index:99999;display:none;background-color:#FFF;"> 
+		<img  src="/public/images/face/face1.png"  id="face1.png" onclick="faceClick(this)"/>
+		<img  src="/public/images/face/face2.png"  id="face2.png" onclick="faceClick(this)"/>
+		<img  src="/public/images/face/face3.png"  id="face3.png" onclick="faceClick(this)"/>
+		<img  src="/public/images/face/face4.png"  id="face4.png" onclick="faceClick(this)"/>
+		<img  src="/public/images/face/face5.png"  id="face5.png" onclick="faceClick(this)"/>
+		<img  src="/public/images/face/face6.png"  id="face6.png" onclick="faceClick(this)"/>
+		<img  src="/public/images/face/face7.png"  id="face7.png" onclick="faceClick(this)"/>
+		<img  src="/public/images/face/face8.png"  id="face8.png" onclick="faceClick(this)"/>
+		<img  src="/public/images/face/face9.png"  id="face9.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face10.png"  id="face10.png" onclick="faceClick(this)"/>
+		</br>
+		<img src="/public/images/face/face11.png"  id="face11.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face12.png"  id="face12.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face13.png"  id="face13.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face14.png"  id="face14.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face15.png"  id="face15.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face16.png"  id="face16.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face17.png"  id="face17.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face18.png"  id="face18.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face19.png"  id="face19.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face20.png"  id="face20.png" onclick="faceClick(this)"/>
+		</br>		
+		<img src="/public/images/face/face21.png"  id="face21.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face22.png"  id="face22.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face23.png"  id="face23.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face24.png"  id="face24.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face25.png"  id="face25.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face26.png"  id="face26.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face27.png"  id="face27.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face28.png"  id="face28.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face29.png"  id="face29.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face30.png"  id="face30.png" onclick="faceClick(this)"/>
+		</br>
+		<img src="/public/images/face/face31.png"  id="face31.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face32.png"  id="face32.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face33.png"  id="face33.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face34.png"  id="face34.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face35.png"  id="face35.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face36.png"  id="face36.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face37.png"  id="face37.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face38.png"  id="face38.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face39.png"  id="face39.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face40.png"  id="face40.png" onclick="faceClick(this)"/>
+		</br>
+		<img src="/public/images/face/face41.png"  id="face41.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face42.png"  id="face42.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face43.png"  id="face43.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face44.png"  id="face44.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face45.png"  id="face45.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face46.png"  id="face46.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face47.png"  id="face47.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face48.png"  id="face48.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face49.png"  id="face49.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face50.png"  id="face50.png" onclick="faceClick(this)"/>
+		</br>
+		<img src="/public/images/face/face51.png"  id="face51.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face52.png"  id="face52.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face53.png"  id="face53.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face54.png"  id="face54.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face55.png"  id="face55.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face56.png"  id="face56.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face57.png"  id="face57.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face58.png"  id="face58.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face59.png"  id="face59.png" onclick="faceClick(this)"/>
+		<img src="/public/images/face/face60.png"  id="face60.png" onclick="faceClick(this)"/>
+		</br>
+		<img src="/public/images/face/face61.png"  id="face61.png" onclick="faceClick(this)"/> 
+		</br>  
+		</div> 

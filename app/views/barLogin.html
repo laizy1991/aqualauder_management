@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" charset="${_response_encoding}">
+        <meta name="keywords" content="KK语音,KK语音官网,KK公会,KK助手,KK聊天,KK游戏聊天,游戏语音软件,手游公会语音软件">
+        <meta name="description" content="KK语音是全球首款为手游公会打造的免费手机游戏语音聊天软件，KK语音助手提供KK公会，KK游戏聊天，手机游戏公会礼包领取等服务，KK语音游戏聊天软件，手游玩家必备聊天神器！">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="shortcut icon" href="@{'/public/images/favicon.ico'}" type="image/x-icon" />
+        <title>${pageTitle}</title>
+        <link rel="stylesheet" href="@{'/public/css/common.css'}">
+        <link rel="stylesheet" href="@{'/public/css/bazhu.css'}">
+    </head>
+    <body>
+        <div class="top-bar">
+            <div class="top-con">
+                <div class="logo"></div>
+                <ul class="top-menu">
+                    <li><a href="http://${websiteHost}/">首页</a></li>
+                    <li><a href="http://${guildHost}/">公会管理平台</a></li>
+                    <li class="current"><a href="javascript:;">游戏管理平台</a></li>
+                    <li><a href="http://${websiteHost}/sdk.html">SDK合作</a></li>
+                    <li><a href="http://${websiteHost}/update.html">更新说明</a></li>
+                    <li><a href="http://${websiteHost}/help.html">帮助</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-show">
+            <div class="top-show-con">
+                <!-- 登录 begin -->
+                <div class="login-box">
+                    <h2 class="title">登录</h2>
+                    <p class="error-msg">${errorMsg}</p>
+        
+                    <form class="login-form" action="@{Application.logined}" method="post">
+                        <div class="form-field">
+                            <label for="mobile"><i class="icon icon-account"></i></label>
+                            <input type="text" id="mobile" name="mobile" value="" placeholder="用户名">
+                        </div>
+                        <div class="form-field">
+                            <label for="password"><i class="icon icon-pwd"></i></label>
+                            <input type="password" id="password" name="password" value="" placeholder="密码">
+                        </div>
+                        <div class="remember">
+                            <label>
+                                <input type="checkbox" id="remember" value="1">
+                                <span>记住账号</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-active">登录</button>
+                    </form>
+                </div>
+                <!-- 登录 end -->
+                <div class="tips-text">第一次使用管理平台？请<a href="http://api.kkyuyin.com/app/downloadApk">下载KK语音</a>进行注册</div>
+                <div class="bg1"></div>
+           </div>
+        </div>
+        <div class="join-step">
+            <div class="join-step-con">
+                <h2 class="join-step-title">游戏入驻流程</h2>
+                <ol class="join-step-list">
+                    <li class="list-1">注册账号<p>KK客户端注册帐号</p></li>
+                    <li class="list-2">提交游戏<p>联系KK官方提交需申请的游戏<br />QQ：309333000<br />邮箱：fanpp@kkyuyin.com</p></li>
+                    <li class="list-3">开通游戏吧<p>认证后KK官方开通管理权限<br />即可登录管理平台<br />如无管理权限请联系fanpp@kkyuyin.com</p></li>
+                </ol>
+                <div class="join-step-bg"></div>
+            </div>
+        </div>
+        
+        <!-- 成功案例 begin -->
+        <div class="rec-case">
+            <h2 class="rec-case-title">成功案例</h2>
+            <div class="nav-case">
+                <ul>
+                    <li class="current">
+                        <div class="nav-case-item">
+                            <div class="pic"><img src="@{'/public/images/ad/dtcq_avatar.jpg'}" width="96" height="96" alt="刀塔传奇"><span class="radius"></span></div>
+                            <div class="name">刀塔传奇</div><span class="arrow"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-case-item">
+                            <div class="pic"><img src="@{'/public/images/ad/fknsg_avatar.gif'}" width="96" height="96" alt="放开那三国"><span class="radius"></span></div>
+                            <div class="name">放开那三国</div><span class="arrow"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-case-item">
+                            <div class="pic"><img src="@{'/public/images/ad/whcl_avatar.png'}" width="96" height="96" alt="卧虎藏龙"><span class="radius"></span></div>
+                            <div class="name">卧虎藏龙</div><span class="arrow"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-case-item">
+                            <div class="pic"><img src="@{'/public/images/ad/qmqz_avatar.png'}" width="96" height="96" alt="全民枪战"><span class="radius"></span></div>
+                            <div class="name">全民枪战</div><span class="arrow"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-case-item">
+                            <div class="pic"><img src="@{'/public/images/ad/qbpkq_avatar.jpg'}" width="96" height="96" alt="去吧皮卡丘"><span class="radius"></span></div>
+                            <div class="name">去吧皮卡丘</div><span class="arrow"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-case-item">
+                            <div class="pic"><img src="@{'/public/images/ad/tlbb3d_avatar.png'}" width="96" height="96" alt="天龙八部3D"><span class="radius"></span></div>
+                            <div class="name">天龙八部3D</div><span class="arrow"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="con-case">
+                <ul>
+                    <li class="case-info">
+                        <div class="pic1"><img src="@{'/public/images/ad/dtcq1.png'}" width="298" height="532" ></div>
+                        <div class="pic2"><img src="@{'/public/images/ad/dtcq2.png'}" width="298" height="532" ></div>
+                        <div class="con"><h3>刀塔传奇</h3><p>2014年不容错过的动作卡牌手游，独特的掌中微操系统，大招技能瞬时释放，给你前所未有的战斗体验！告别无脑等待，增强互动体验，全新超炫战斗技能演绎指尖大招，掀起第三代手游新纪元！</p></div>
+                    </li>
+                    <li class="case-info" style="display: none;">
+                        <div class="pic1"><img src="@{'/public/images/ad/fknsg1.png'}" width="298" height="532" ></div>
+                        <div class="pic2"><img src="@{'/public/images/ad/fknsg2.png'}" width="298" height="532" ></div>
+                        <div class="con"><h3>放开那三国</h3><p>2014最热Q版萌系卡牌手游，捧腹搞笑的三国剧情、百变的三国大咖集体乱搞、独创怒气大招的绝伦体验，让玩家随时打开游戏都可以享受最佳游戏体验。<br /></p></div>
+                    </li>
+                    <li class="case-info" style="display: none;">
+                        <div class="pic1"><img src="@{'/public/images/ad/whcl1.png'}" width="298" height="532" ></div>
+                        <div class="pic2"><img src="@{'/public/images/ad/whcl2.png'}" width="298" height="532" ></div>
+                        <div class="con"><h3>卧虎藏龙</h3><p>全球首款大型超自由度网游，端游品质、无束缚游戏成长体系、纯味武侠题材，摒弃了传统的仅通过每天日常来维持用户线上行为的方式，高随机率的奇遇、剧情等让玩家的每次游戏体验都与众不同。<br /></p></div>
+                    </li>
+                    <li class="case-info" style="display: none;">
+                        <div class="pic1"><img src="@{'/public/images/ad/qmqz1.png'}" width="298" height="532" ></div>
+                        <div class="pic2"><img src="@{'/public/images/ad/qmqz2.png'}" width="298" height="532" ></div>
+                        <div class="con"><h3>全民枪战</h3><p>全球首款FPS竞技手机游戏，最高端的次世代游戏显示技术，数十种游戏地图和游戏模式任你选择，爆破、歼灭、团战、单挑、夺旗、抢物等特色玩法，成就掌上枪王不是梦！<br /></p></div>
+                    </li>
+                    <li class="case-info" style="display: none;">
+                        <div class="pic1"><img src="@{'/public/images/ad/qbpkq1.png'}" width="298" height="532" ></div>
+                        <div class="pic2"><img src="@{'/public/images/ad/qbpkq2.png'}" width="298" height="532" ></div>
+                        <div class="con"><h3>去吧皮卡丘</h3><p>一款宠物养成、策略的全新卡牌对战游戏，独创性的增加宠物转身系统、家园系统、合成系统三大特色玩法，涵盖卡牌搜集、精灵养成、副本PK等经典玩法。百变玩法，宠物养成升级进化，打造属于您的一流宠物队伍！<br /></p></div>
+                    </li>
+                    <li class="case-info" style="display: none;">
+                        <div class="pic1"><img src="@{'/public/images/ad/tlbb3d1.png'}" width="298" height="532" ></div>
+                        <div class="pic2"><img src="@{'/public/images/ad/tlbb3d2.png'}" width="298" height="532" ></div>
+                        <div class="con"><h3>天龙八部3D</h3><p>首款纯正的金庸武侠MMORPG手游，大胆地将端游《天龙八部》的玩法精髓进行了手游化移植和复刻，研发团队全部来自于端游《天龙八部》原班人马！<br /></p></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 成功案例 end -->
+        #{include file="common/footer.html" /}
+        
+        #{include file="common/jsinclude.html" /}
+        <script>
+            var verNum = new Date();
+            seajs.config({
+                base:"/",
+                // 加版本号
+                map: [
+                    [ '.js', '.js?v='+verNum]
+                ]
+            });
+            seajs.use("@{'/public/js/app/login/login.js'}");
+        </script>
+    </body>
+</html>

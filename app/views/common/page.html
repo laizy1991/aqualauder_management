@@ -1,0 +1,37 @@
+<!-- 分页 begin --> 
+#{if pageData!=null && pageData.getTotalPage() > 1}
+    <div id="pagination" class="text-center">
+    	 <!--首页-->
+	    <ul class="pagination pagination-lg" style="padding-right: 20px;">
+	        <li><a href='${pageData.createPageLink(1)}'>首页</a></li>
+	    </ul>
+	    <!--分页-->
+    	<ul class="pagination pagination-lg">
+    		#{if pageData.isFirstPage()}
+                
+            #{/if}
+            #{else}
+           		<li><a href='${pageData.createPageLink(pageData.getPreviousPage())}'>&laquo;</a></li>
+            #{/else}
+	        #{list items:pageData.createPages(10), as:'pd'}
+                #{if pd == pageData.getPage()}
+                   <li class='active'><a href='${pageData.createPageLink(pd)}'>${pd}</a></li>
+                #{/if}
+                #{else}
+                    <li><a href="${pageData.createPageLink(pd)}">${pd}</a></li>
+                #{/else}
+         	#{/list}
+         	
+         	#{if pageData.isLastPage()}
+                 
+            #{/if}
+            #{else}
+           		<li><a href='${pageData.createPageLink(pageData.getNextPage())}'>&raquo;</a></li>
+            #{/else} 
+	    </ul>
+	 	<ul class="pagination pagination-lg" style="padding-left: 20px;">
+        	<li><a href='${pageData.createPageLink(pageData.getTotalPage())}'><span>未页:${pageData.getTotalPage()}页</span></a></li>
+    	</ul>
+    </div>
+#{/if}
+<!-- 分页 end -->

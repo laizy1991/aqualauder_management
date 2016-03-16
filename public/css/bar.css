@@ -1,0 +1,639 @@
+.opt-bar-l, .detail-hd, .detail-bd .img-list, .reply-list .info,
+	.reply-list .sub-write, .form-field {
+	*zoom: 1
+}
+
+.opt-bar-l:after, .detail-hd:after, .detail-bd .img-list:after,
+	.reply-list .info:after, .reply-list .sub-write:after, .form-field:after
+	{
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	font-size: 0
+}
+
+.list .text {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.filter-bar .search-wrap {
+	padding-bottom: 0
+}
+
+.opt-bar-l .btn-group, .opt-bar-l .weaker-text {
+	float: left
+}
+
+.opt-bar-l .weaker-text {
+	height: 36px;
+	line-height: 36px;
+	padding-left: 10px
+}
+
+.opts {
+	font-size: 0
+}
+
+.opts .opt, .opts .line {
+	font-size: 14px
+}
+
+.opts .opt {
+	display: inline-block
+}
+
+.opts .opt a {
+	border-right: 1px solid #E8E8E8;
+	padding: 0 10px
+}
+
+.opts .opt.last a {
+	border-right: 0 none;
+	padding-right: 0
+}
+
+.opts .active {
+	background-color: #F8F8F8
+}
+
+.opts .active a {
+	border-right-color: #F8F8F8
+}
+
+.list-wrap {
+	border: 1px solid #E5E5E5
+}
+
+.list {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+.list .item, .list .text, .list .opts {
+	height: 52px;
+	line-height: 52px
+}
+
+.list .item {
+	position: relative;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 0 20px;
+	-webkit-transition: background-color 0.15s ease;
+	-moz-transition: background-color 0.15s ease;
+	-ms-transition: background-color 0.15s ease;
+	-o-transition: background-color 0.15s ease;
+	transition: background-color 0.15s ease
+}
+
+.list .item.last {
+	border-bottom: 0 none
+}
+
+.list .text {
+	display: inline-block;
+	width: 610px;
+	color: #666;
+	font-size: 16px
+}
+
+.list .opts {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	display: none
+}
+
+.list .hover {
+	background-color: #F8F8F8
+}
+
+.list .hover .opts {
+	display: block
+}
+
+.list .top, .list .high-quality {
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 14px;
+	font-weight: 700;
+	border-radius: 2px;
+	vertical-align: middle
+}
+
+.list .top {
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #E43601;
+	padding: 0 3px;
+	color: #E43601
+}
+
+.list .high-quality {
+	height: 24px;
+	line-height: 24px;
+	background-color: #FF6600;
+	padding: 0 5px;
+	color: #fff
+}
+
+.pagination-wrap {
+	border: 1px solid #E5E5E5;
+	border-top: 0 none;
+	padding: 8px 20px;
+	text-align: right
+}
+
+.detail {
+	border: 1px solid #E5E5E5;
+	padding: 0 20px;
+	margin-bottom: 20px
+}
+
+.detail-hd {
+	border-bottom: 1px solid #E5E5E5;
+	padding: 20px 0;
+	color: #999
+}
+
+.detail-hd .user-info {
+	float: left;
+	width: 50%
+}
+
+.detail-hd .user-info img {
+	float: left;
+	width: 48px;
+	height: 48px;
+	border-radius: 2px
+}
+
+.detail-hd .user-info p {
+	margin-left: 58px
+}
+
+.detail-hd .user-info strong {
+	color: #333;
+	font-weight: 400
+}
+
+.detail-hd .user-info .large-text {
+	line-height: 1.2;
+	padding-bottom: 9px
+}
+
+.detail-hd .aside {
+	float: right;
+	text-align: right
+}
+
+.detail-hd .aside .opts {
+	padding-bottom: 8px
+}
+
+.detail-bd {
+	line-height: 1.7;
+	padding: 34px 0
+}
+
+.detail-bd .title {
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 28px;
+	font-weight: 400
+}
+
+.detail-bd .article {
+	font-size: 16px;
+	color: #666;
+	text-indent: 2em
+}
+
+.detail-bd .article img {
+	max-width: 878px;
+	_width: expression(this.width > 878 ? "878px" : "auto")
+}
+
+.detail-bd .img-list-wrap {
+	overflow: hidden
+}
+
+.detail-bd .img-list {
+	width: 900px;
+	margin: 20px 0 0;
+	padding: 0;
+	list-style: none
+}
+
+.detail-bd .img-list li {
+	float: left;
+	margin: 10px 10px 0 0
+}
+
+.detail-bd .img-list li:last-child {
+	margin-right: 0
+}
+
+.detail-bd .img-list img {
+	width: 286px;
+	height: 286px
+}
+
+.reply ul {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+.reply-hd {
+	height: 52px;
+	line-height: 52px;
+	border: 1px solid #E5E5E5;
+	font-size: 18px;
+	padding: 0 20px;
+	margin-bottom: -1px
+}
+
+.reply-bd {
+	border: 1px solid #E5E5E5;
+	padding: 0 20px;
+	margin-bottom: -1px
+}
+
+.reply-list .item {
+	position: relative;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 20px 0
+}
+
+.reply-list .item.last {
+	border-bottom: 0 none
+}
+
+.reply-list .info img {
+	float: left;
+	width: 48px;
+	height: 48px;
+	border-radius: 2px
+}
+
+.reply-list .info .text {
+	margin-left: 58px
+}
+
+.reply-list .info .extra-text {
+	height: 20px;
+	line-height: 20px;
+	padding-bottom: 6px;
+	color: #666;
+	position: relative
+}
+
+.reply-list .info .extra-text .name {
+	float: left
+}
+
+.reply-list .info .extra-text .time {
+	float: right
+}
+
+.reply-list .info .main-text {
+	font-size: 16px
+}
+
+.reply-list .opts .opt {
+	padding: 6px 0
+}
+
+.reply-list .sub-reply {
+	display: none;
+	background-color: #F8F8F8;
+	padding: 0 20px 20px
+}
+
+.reply-list .sub-reply.show {
+	display: block
+}
+
+.reply-list .sub-reply .more {
+	text-align: right;
+	padding: 10px 0 0
+}
+
+.reply-list .sub-reply-list {
+	margin-top: 15px
+}
+
+.reply-list .sub-reply-list li {
+	line-height: 1.6;
+	padding: 10px 0;
+	border-bottom: 1px solid #EEE;
+	color: #999
+}
+
+.reply-list .sub-reply-list li a {
+	margin-left: 6px
+}
+
+.reply-list .sub-reply-list .name {
+	color: #333
+}
+
+.reply-list .sub-write {
+	padding: 15px 0 0
+}
+
+.reply-list .sub-write textarea {
+	float: left;
+	width: 747px;
+	height: 20px;
+	line-height: 20px;
+	padding: 7px 10px;
+	background-color: #fff;
+	border: 1px solid #E5E5E5;
+	vertical-align: middle;
+	overflow-x: hidden;
+	overflow-y: auto
+}
+
+.reply-list .sub-write .btn {
+	float: right
+}
+
+.reply-list .step-on {
+	position: absolute;
+	right: 138px;
+	top: 7px;
+	display: block;
+	width: 66px;
+	height: 65px;
+	line-height: 999px;
+	overflow: hidden;
+	background: url(../images/step-on.png) no-repeat 0 0
+}
+
+.reply-list .step-top {
+	position: relative;
+	margin-left: -10px;
+	right: -20px;
+	float: right;
+	display: block;
+	width: 43px;
+	height: 21px;
+	line-height: 999px;
+	overflow: hidden;
+	background: url(../images/step-top.png) no-repeat 0 0
+}
+
+.write {
+	background-color: #F8F8F8;
+	border: 1px solid #E5E5E5;
+	padding: 20px
+}
+
+.write textarea {
+	width: 850px;
+	height: 78px;
+	background-color: #fff;
+	border: 1px solid #E5E5E5;
+	padding: 10px 14px;
+	vertical-align: top;
+	overflow-x: hidden;
+	overflow-y: auto
+}
+
+.write .btn-wrap {
+	padding-top: 10px;
+	text-align: right
+}
+
+.write .btn {
+	width: 120px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 16px
+}
+
+.reply-page {
+	border: 1px solid #E5E5E5;
+	padding: 10px 20px;
+	margin-bottom: -1px;
+	text-align: right
+}
+
+.form-publish {
+	padding: 20px 0
+}
+
+.form-field {
+	line-height: 36px;
+	padding: 0 0 4px
+}
+
+.form-field input {
+	height: 20px;
+	line-height: 20px;
+	padding: 7px 8px;
+	border: 1px solid #E5E5E5
+}
+
+.form-field .ck-label {
+	margin-right: 16px
+}
+
+.form-field .ck-label input {
+	border: none;
+	padding: 0;
+	margin-right: 5px;
+	*margin-right: 0
+}
+
+.form-field .form-label {
+	float: left;
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	width: 75px
+}
+
+.form-field .form-control {
+	float: left
+}
+
+.form-field .input-topic-title {
+	width: 402px
+}
+
+.form-field .input-floor {
+	width: 112px;
+	margin: 0 6px
+}
+
+.offset {
+	padding-left: 75px
+}
+
+.dialog-floor-explain {
+	width: 350px;
+	padding: 20px 20px 15px
+}
+
+.dialog-floor-explain h4 {
+	margin-bottom: 10px
+}
+
+.dialog-floor-explain p {
+	margin-bottom: 5px
+}
+
+.dialog-floor-explain ol {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+.dialog-floor-explain li {
+	line-height: 1.75;
+	margin-bottom: 5px;
+	text-indent: -24px;
+	padding-left: 24px
+}
+
+.msg-headinfo {
+	font-size: 12px;
+	color: #999
+}
+
+.msg-list {
+	margin: 0;
+	padding: 0
+}
+
+.msg-list li {
+	border-bottom: 1px solid #E5E5E5;
+	list-style: none
+}
+
+.msg-wrap .pagination-wrap {
+	border: none
+}
+
+.guild-group {
+	height: 72px;
+	padding: 20px 0;
+	overflow: hidden;
+	position: relative
+}
+
+.guild-group .pic {
+	float: left
+}
+
+.guild-group .pic img {
+	width: 72px;
+	height: 72px;
+	border-radius: 2px
+}
+
+.guild-group .name, .guild-group .con, .guild-group .time {
+	margin-left: 92px
+}
+
+.guild-group .name {
+	font-size: 18px;
+	color: #333;
+	padding-bottom: 2px
+}
+
+.guild-group .con {
+	font-size: 16px;
+	color: #737373;
+	line-height: 22px;
+	width: 664px;
+	/*height: 22px;*/
+	height: auto;
+	/*overflow: hidden;*/
+	/*white-space: nowrap;*/
+	word-break:break-all;
+	/*text-overflow: ellipsis*/
+}
+
+.guild-group .time {
+	font-size: 16px;
+	color: #999
+}
+
+.guild-group .state {
+	color: #00b722;
+	position: absolute;
+	right: 10px;
+	top: 82px
+}
+
+.guild-group .btn {
+	position: absolute;
+	right: 0;
+	top: 40px
+}
+
+.guild-group .dialog {
+	right: 75px
+}
+
+.reply-content {
+	display: none;
+	background: #F8F8F8;
+	padding: 10px;
+	margin-bottom: 20px
+}
+
+.reply-content .textarea {
+	background: #fff;
+	width: 868px;
+	height: 78px;
+	border: 1px solid #E5E5E5;
+	padding: 10px 15px;
+	color: #ADADAD
+}
+
+.reply-content .hover {
+	color: #000
+}
+
+.reply-content .btns {
+	text-align: right;
+	padding-top: 10px
+}
+
+.show-reply .reply-content {
+	display: block
+}
+
+.editor-wrap {
+	position: relative
+}
+
+.editor-wrap .msg {
+	position: absolute;
+	right: 5px;
+	bottom: -26px;
+	color: #999
+}
+
+.editor-wrap .error-msg {
+	color: #E43601;
+	padding: 0
+}
+
+.msg-list-headinfo {
+	font-size: 16px;
+	margin-bottom: 10px
+}
+
+.msg-list-dialog .guild-group .con {
+	width: 763px
+}
