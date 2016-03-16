@@ -1,0 +1,17 @@
+output/
+/modules/
+/lib/
+.classpath
+.project
+.settings/
+eclipse/
+precompiled/
+logs/
+dist/
+tmp/
+test-result/*
+*.log
+.gitignore.txt
+*.swp
+/bin/
+/server.pid
