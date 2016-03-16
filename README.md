@@ -20,15 +20,6 @@ git clone ${URL}
 ````
 
 ###### 调整日志
-log4j.properties
-
-````
-#DEBUG/INFO/WARN/ERROR，调整后无需重启，即时生效
-log4j.logger.com.asiainfo=DEBUG
-
-#调整应用日志文件绝对路径
-log4j.appender.logfile.File=${TOMCAT_HOME}/logs/TokenServer.log
-````
 
 ###### 数据源配置
 
