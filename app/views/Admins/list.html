@@ -1,0 +1,120 @@
+#{extends 'main.html' /}
+
+#{set 'moreStyles'}
+    <link rel="stylesheet" href="@{'/public/css/admin-info.css'}">
+    <link rel="shortcut icon" type="image/x-icon" href="@{'/public/images/favicon.ico'}" />
+
+    <link rel="stylesheet" href="@{'/public/css/trumpet.css'}">
+    <link rel="stylesheet" href="@{'/public/css/common.css'}">
+#{/set}
+     <style>
+
+     </style>
+<!-- 页头 begin -->
+<div class="main-header">
+    <div class="breadcrumb">
+        <span class="nolink">管理员列表</span>
+    </div>
+    <a class="btn btn-default" href="javascript:;" role="create">添加</a>
+</div>
+<!-- 页头 end -->
+
+    <table class="tb">
+        <thead>
+        <tr  class="text-center">
+            <th>姓名</th>
+            <th class="order" role="contributeAsc">
+                创建时间
+            </th>
+            <th class="order" role="contributeAsc">
+                修改时间
+            </th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        #{if admins == null || admins.size() == 0 }
+            <tr><td colspan="5" style="text-align:center;">暂无记录<td></tr>
+        #{/if}
+        #{else}
+        #{list items:admins, as:'info'}
+        <tbody>
+        <tr class="user-item">
+            <input type="hidden" class="id" name="id" value="${info.id}">
+            <td>${info?.username}</td>
+            <td>
+            %{out.print(utils.DateUtil.getDateString(info?.createTime))}%
+            </td>
+            <td>%{out.print(utils.DateUtil.getDateString(info?.modifyTime))}%</td>
+            <td>
+                <div class="opts">
+                    <span class="opt" role="edit"><a href="javascript:;">修改</a></span>|
+                    <span class="opt" role="delete"><a href="javascript:;">删除</a></span>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+        #{/list}
+        #{/else}
+    </table>
+
+#{include file="common/jsinclude.html" /}
+
+#{set 'moreScripts'}
+<script type="text/javascript" src="@{'/public/js/thirdParty/bootstrap-3.3.4/js/jquery-2.1.3.min.js'}"></script>
+<script type="text/javascript" src="@{'/public/js/lib/sea_2.1.1.js'}"></script>
+<script type="text/javascript" src="@{'/public/js/thirdParty/bootstrap-3.3.4/js/bootstrap.min.js'}"></script>
+
+<script id="createDialogTmpl" type="text/html">
+    <div class="dialog dialog-create">
+        <form action="@{ajax.Admins.add}" id="createAdmin">
+            <div class="form-group">
+                <label class="label"><span class="asterisk">*</span>姓名</label>
+                <div class="col">
+                    <input type="text" name="admin.username" value="" style='width:150px'>
+                    <span class="msg error-text">必填项！</span>
+                </div>
+            </div>
+        </form>
+    </div>
+</script>
+
+<!-- 删除 -->
+<script id="deleteDialogTmpl" type="text/html">
+    <div class="dialog dialog-create">
+        <form action="@{ajax.Admins.delete}" id="deleteAdmin">
+            <div class="form-group">
+                <input type="hidden" class="in-t" id="adminId" name="admin.id" value="">
+                <label class="label">确定删除？</label>
+            </div>
+        </form>
+    </div>
+</script>
+
+<!-- 编辑邮箱信息 -->
+<script id="editDialogTmpl" type="text/html">
+    <div class="dialog dialog-create">
+            <form action="@{ajax.Admins.update}" id="updateAdmin">
+                
+            <div class="form-group">
+                <label class="label"><span class="asterisk">*</span>姓名</label>
+                <div class="col">
+                    <input type="text" name="admin.username" id="username" value="" style='width:150px'>
+                    <span class="msg error-text">必填项！</span>
+                </div>
+            </div>
+            </form>
+    </div>
+</script>
+
+    <script>
+        var verNum = new Date();
+        seajs.config({
+            base:"../",
+            // 加版本号
+            map: [
+                [ '.js', '.js?v='+verNum]
+            ]
+        });
+        seajs.use("@{'/public/js/app/modules/admins.js'}");
+    </script>
+#{/set}
